@@ -1,19 +1,29 @@
 const yaml = require("js-yaml");
+const readingTime = require("eleventy-plugin-reading-time");
+const { DateTime } = require("luxon");
 
 module.exports = eleventyConfig => {
 
     // added yaml support
     eleventyConfig.addDataExtension("yaml, yml", contents => yaml.load(contents));
 
+    // reading time plugin
+    eleventyConfig.addPlugin(readingTime);
+
+
     // ---------------------------------
     // PASSTHROUGH
     // ---------------------------------
-    // passthrough the webfonts folder for fontawesome
+    // webfonts folder for fontawesome
     eleventyConfig.addPassthroughCopy({ "src/assets/webfonts": "webfonts" })
 
-    // passthrough js folder
+    // js folder
     eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" })
 
+
+    // ---------------------------------
+    // RETURN
+    // ---------------------------------
     return {
         // set template engine so that md, data and html files are processed by nunjucks
         markdownTemplateEngine: 'njk',
