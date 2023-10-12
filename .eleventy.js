@@ -7,7 +7,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addPassthroughCopy({ "src/assets/webfonts": "webfonts" })
 
     // passthrough js folder
-    eleventyConfig.addPassthroughCopy('./src/js')
+    eleventyConfig.addPassthroughCopy({ "src/assets/js": "js" })
 
     return {
         // set template engine so that md, data and html files are processed by nunjucks
