@@ -8,5 +8,19 @@
             "text": "About",
             "url": "/about"
         }
+    ],
+    "footerNav": [
+        {
+            "text": "Privacy Policy",
+            "url": "/privacy-policy"
+        },
+        {
+            "text": "Legal Notice",
+            "url": "/legal-notice"
+        },
+        {
+            "text": "Contact",
+            "url": "/contact"
+        }
     ]
 }

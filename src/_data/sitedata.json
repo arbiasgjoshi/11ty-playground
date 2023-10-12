@@ -1,5 +1,23 @@
 {
     "name": "11ty-playground",
     "author": "redrubycorn",
-    "year": 2022
+    "year": 2022,
+    "social": [
+        {
+            "name": "youtube",
+            "url": "https://www.youtube.com/"
+        },
+        {
+            "name": "linkedin",
+            "url": "https://www.linkedin.com"
+        },
+        {
+            "name": "mastodon",
+            "url": "https://mastodon.social/explore"
+        },
+        {
+            "name": "twitter",
+            "url": "https://twitter.com"
+        }
+    ]
 }

@@ -1,4 +1,8 @@
 module.exports = {
+
+    // --------------------------------------------------------------------
+    // active state and aria label for links
+
     /**
      * Returns back some attributes based on whether the
      * link is active or a parent of an active item
@@ -25,5 +29,13 @@ module.exports = {
         if ((itemUrl === pageUrl) || (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0)) {
             return ' active';
         }
-    }
+    },
+
+
+    // --------------------------------------------------------------------
+    // get current year
+    currentYear() {
+        const today = new Date();
+        return today.getFullYear();
+      }
 };
