@@ -1,6 +1,10 @@
 module.exports = eleventyConfig => {
+
+    // ---------------------------------
+    // PASSTHROUGH
+    // ---------------------------------
     // passthrough the webfonts folder for fontawesome
-    eleventyConfig.addPassthroughCopy({ "src/webfonts": "webfonts" })
+    eleventyConfig.addPassthroughCopy({ "src/assets/webfonts": "webfonts" })
 
     // passthrough js folder
     eleventyConfig.addPassthroughCopy('./src/js')
