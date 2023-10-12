@@ -1,4 +1,9 @@
+const yaml = require("js-yaml");
+
 module.exports = eleventyConfig => {
+
+    // added yaml support
+    eleventyConfig.addDataExtension("yaml, yml", contents => yaml.load(contents));
 
     // ---------------------------------
     // PASSTHROUGH
