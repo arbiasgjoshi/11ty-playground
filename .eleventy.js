@@ -30,6 +30,9 @@ module.exports = eleventyConfig => {
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
 
+        // add a pathPrefix
+        pathPrefix: "/11ty-playground/",
+
         // specify input and output dirs
         dir: {
             input: 'src',
