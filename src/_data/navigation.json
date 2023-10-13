@@ -6,21 +6,21 @@
         },
         {
             "text": "About",
-            "url": "/about"
+            "url": "/about/"
         }
     ],
     "footerNav": [
         {
             "text": "Privacy Policy",
-            "url": "/privacy-policy"
+            "url": "/privacy-policy/"
         },
         {
             "text": "Legal Notice",
-            "url": "/legal-notice"
+            "url": "/legal-notice/"
         },
         {
             "text": "Contact",
-            "url": "/contact"
+            "url": "/contact/"
         }
     ]
 }
