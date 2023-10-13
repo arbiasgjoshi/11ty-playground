@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm install
-          npm run build --pathprefix=11ty-playground
+          npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3

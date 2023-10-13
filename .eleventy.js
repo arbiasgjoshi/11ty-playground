@@ -1,8 +1,12 @@
 const yaml = require("js-yaml");
 const readingTime = require("eleventy-plugin-reading-time");
 const { DateTime } = require("luxon");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = eleventyConfig => {
+
+    // add html base element
+    eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
     // added yaml support
     eleventyConfig.addDataExtension("yaml, yml", contents => yaml.load(contents));
