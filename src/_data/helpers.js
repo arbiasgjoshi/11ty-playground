@@ -19,7 +19,7 @@ module.exports = {
         }
 
         if (itemUrl.length > 1 && pageUrl.indexOf(itemUrl) === 0) {
-            response += 'data-state="active"';
+            response += ' data-state="active"';
         }
 
         return response;
