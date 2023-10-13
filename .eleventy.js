@@ -33,7 +33,7 @@ module.exports = eleventyConfig => {
         // specify input and output dirs
         dir: {
             input: 'src',
-            output: 'docs'
+            output: '_site'
         }
     };
 };
